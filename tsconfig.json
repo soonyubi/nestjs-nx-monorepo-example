@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/nestjs-monorepo-nx-example-e2e"
+    },
+    {
+      "path": "./apps/nestjs-monorepo-nx-example"
+    }
+  ]
+}

@@ -1,8 +1,18 @@
 {
   "extends": "../../tsconfig.base.json",
   "files": [],
-  "include": [],
+  "include": ["../../libs/**/*"],
+  "compilerOptions": { "rootDir": "../..", "baseUrl": "." },
   "references": [
+    {
+      "path": "../../libs/utils"
+    },
+    {
+      "path": "../../libs/auth"
+    },
+    {
+      "path": "../../libs/db"
+    },
     {
       "path": "./tsconfig.app.json"
     },

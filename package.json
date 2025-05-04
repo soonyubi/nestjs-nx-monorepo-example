@@ -2,10 +2,16 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prisma:generate": "prisma generate --schema=libs/db/prisma/schema.prisma",
+    "prisma:migrate:dev": "prisma migrate dev --schema=libs/db/prisma/schema.prisma",
+    "prisma:migrate:deploy": "prisma migrate deploy --schema=libs/db/prisma/schema.prisma",
+    "prisma:studio": "prisma studio --schema=libs/db/prisma/schema.prisma"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
@@ -25,6 +31,7 @@
     "@nx/web": "20.8.1",
     "@nx/webpack": "20.8.1",
     "@nx/workspace": "20.8.1",
+    "@prisma/client": "^6.7.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
@@ -37,6 +44,7 @@
     "jest-environment-node": "^29.7.0",
     "nx": "20.8.1",
     "prettier": "^2.6.2",
+    "prisma": "^6.7.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",

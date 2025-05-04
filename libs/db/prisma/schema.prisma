@@ -44,6 +44,7 @@ model Product {
   cartItems     CartItem[]
   orderItems    OrderItem[]
   reviews       Review[]
+  stockHistory  StockHistory[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -161,4 +162,27 @@ model Review {
   updatedAt   DateTime  @updatedAt
 
   @@unique([userId, productId])
+}
+
+enum StockUpdateReason {
+  PURCHASE
+  SALE
+  RETURN
+  DAMAGE
+  INVENTORY_ADJUSTMENT
+  INITIAL_STOCK
+}
+
+model StockHistory {
+  id            String           @id @default(uuid())
+  productId     String
+  product       Product          @relation(fields: [productId], references: [id])
+  quantity      Int
+  actionType    String           // 'add' 또는 'subtract'
+  reason        StockUpdateReason
+  reference     String?          // 주문 ID, 반품 ID 등
+  previousStock Int
+  newStock      Int
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
 }

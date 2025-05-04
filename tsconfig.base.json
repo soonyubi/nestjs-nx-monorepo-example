@@ -18,10 +18,11 @@
     "target": "es2022",
     "customConditions": ["development"],
     "paths": {
+      "@org/auth": ["libs/auth/src/index.ts"],
       "@org/db": ["libs/db/src/index.ts"],
-      "@org/utils": ["libs/utils/src/index.ts"],
-      "@org/auth": ["libs/auth/src/index.ts"]
+      "@org/utils": ["libs/utils/src/index.ts"]
     },
+    "baseUrl": ".",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   }

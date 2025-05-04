@@ -17,6 +17,12 @@
     },
     {
       "path": "./libs/auth"
+    },
+    {
+      "path": "./apps/user-web-e2e"
+    },
+    {
+      "path": "./apps/user-web"
     }
   ]
 }

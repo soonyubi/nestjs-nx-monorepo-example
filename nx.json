@@ -28,7 +28,8 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
-      }
+      },
+      "exclude": ["libs/utils/*"]
     },
     {
       "plugin": "@nx/webpack/plugin",
@@ -52,6 +53,15 @@
         "targetName": "test"
       },
       "exclude": ["apps/nestjs-monorepo-nx-example-e2e/**/*"]
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": ["libs/utils/*"],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
     }
   ],
   "targetDefaults": {

@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/nestjs-monorepo-nx-example"
+    },
+    {
+      "path": "./libs/utils"
     }
   ]
 }

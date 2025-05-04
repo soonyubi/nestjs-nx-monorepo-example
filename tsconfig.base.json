@@ -16,6 +16,13 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["development"]
+    "customConditions": ["development"],
+    "paths": {
+      "@org/db": ["libs/db/src/index.ts"],
+      "@org/utils": ["libs/utils/src/index.ts"],
+      "@org/auth": ["libs/auth/src/index.ts"]
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }

@@ -38,6 +38,15 @@
     },
     {
       "path": "./apps/payment-service"
+    },
+    {
+      "path": "./apps/inventory-service-e2e"
+    },
+    {
+      "path": "./apps/inventory-service"
+    },
+    {
+      "path": "./libs/inventory"
     }
   ]
 }

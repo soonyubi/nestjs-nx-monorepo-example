@@ -29,6 +29,15 @@
     },
     {
       "path": "./apps/admin-dashboard"
+    },
+    {
+      "path": "./libs/payment"
+    },
+    {
+      "path": "./apps/payment-service-e2e"
+    },
+    {
+      "path": "./apps/payment-service"
     }
   ]
 }

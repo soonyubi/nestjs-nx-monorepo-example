@@ -54,7 +54,8 @@
       },
       "exclude": [
         "apps/nestjs-monorepo-nx-example-e2e/**/*",
-        "apps/user-web-e2e/**/*"
+        "apps/user-web-e2e/**/*",
+        "apps/admin-dashboard-e2e/**/*"
       ]
     },
     {

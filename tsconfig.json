@@ -23,6 +23,12 @@
     },
     {
       "path": "./apps/user-web"
+    },
+    {
+      "path": "./apps/admin-dashboard-e2e"
+    },
+    {
+      "path": "./apps/admin-dashboard"
     }
   ]
 }

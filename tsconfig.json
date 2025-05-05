@@ -4,12 +4,6 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/nestjs-monorepo-nx-example-e2e"
-    },
-    {
-      "path": "./apps/nestjs-monorepo-nx-example"
-    },
-    {
       "path": "./libs/utils"
     },
     {

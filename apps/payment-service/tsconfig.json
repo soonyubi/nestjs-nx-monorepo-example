@@ -4,6 +4,15 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/payment"
+    },
+    {
+      "path": "../../libs/auth"
+    },
+    {
+      "path": "../../libs/db"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {
